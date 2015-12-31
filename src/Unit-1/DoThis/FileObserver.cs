@@ -73,7 +73,7 @@ namespace WinTail
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void OnFileChanged(object sender, FileSystemEventArgs e)
+        void OnFileChanged(object sender, FileSystemEventArgs e)
         {
             if (e.ChangeType == WatcherChangeTypes.Changed)
             {
